@@ -1,0 +1,287 @@
+# robots.txt by Josep Espinós 
+# https://user-agents.net/ ( gran cantidad de bots)
+# Si esta crawleando nuestra web es que accepta los terminos y condiciones.
+# "Pagina condiciones".
+
+
+User-agent: *
+Crawl-Delay: 10
+
+# Per si cal.
+Disallow: /IMAGES/
+Disallow: /FONTS/
+Disallow: /*.
+
+# Boot de google 
+
+User-agent: Googlebot
+Allow: /*.html$
+Disallow: /*.
+
+
+User-agent: Googlebot-Video
+Allow: /*.html$
+Disallow: /*.
+
+User-agent: Googlebot-News
+Allow: /*.html$
+Disallow: /*.
+
+User-agent: Googlebot-Mobile
+Allow: /*.html$
+Disallow: /*.
+
+User-agent: Mediapartners-Google
+Allow: /*.html$
+Disallow: /*.
+
+User-agent: AdsBot-Google
+Allow: /*.html$
+Disallow: /*.
+
+
+
+# Boot de safari/apple/siri
+
+User-agent: Applebot
+Allow: /*.html$
+Disallow: /*.
+
+# Boot de bing
+
+User-agent: Bingbot
+Allow: /*.html$
+Disallow: /*.
+
+# Boot de Rastreador de imagenes y videos con Bing
+
+User-agent: msnbot
+Allow: /*.html$
+Disallow: /*.
+
+# No hi han imagens lliures.
+
+# Ni piter gasta yahoo :D
+User-agent: Slurp
+Crawl-delay: 30
+
+# Biadu google chino blocked
+#No interesa indexat
+User-agent: baiduspider
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+#No interesa indexat
+User-agent: Baiduspider
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+#No interesa indexat
+# No bot RRSS
+User-agent: seznambot
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+# Mozilla 4.0
+User-agent: Teoma
+Allow: /*.html$
+Disallow: /*.
+
+
+#No interesa indexat
+User-agent: Yandex
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+# Duck Duck go
+User-agent: DuckDuckBot
+Allow: /*.html$
+Disallow: /*.
+Crawl-Delay: 20
+
+# Creo que es alibaba ( blocked)
+
+User-agent: Yeti
+
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+# Mozilla 5.0( korea)
+
+User-agent: daumoa
+Allow: /*.html$
+Disallow: /*.
+
+# A través de dns de orange ( Francia)
+# Prod by orange
+
+User-agent: OrangeBot
+Allow: /*.html$
+Disallow: /*.
+
+User-agent: OrangeBot-Collector
+Allow: /*.html$
+Disallow: /*.
+
+
+#Russian spider. Crawls the web for Ramber.ru, a search engine of Rambler Media
+#No interesa Geo 
+
+User-agent: StackRambler
+
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+#Russian spider.
+#No interesa Geo 
+
+User-agent: Mail.RU_Bot
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+
+#Twitterbot
+
+User-agent: Twitterbot/1.0
+Allow: /*.html$
+Disallow: /*.
+
+
+#Safari / siri
+
+User-agent: naverbot
+Allow: /*.html$
+Disallow: /*.
+
+# Navegador pocho https://vebidoo.com.cutestat.com/
+
+User-agent: vebidoobot
+Disallow: /
+Crawl-Delay: 100
+Disallow: /*.js$
+Disallow: /*.php$
+
+
+# https://www.mj12bot.com/ majestic ( Seo inglaterra)
+# Si obedece robots
+User-agent: MJ12bot
+Allow: /*.html$
+Disallow: /*.
+
+# Bots chinos
+
+User-agent: YoudaoBot
+Disallow: /
+Crawl-Delay: 100
+
+User-agent: sogou
+Disallow: /
+Crawl-Delay: 100
+
+User-agent: 360Spider
+Disallow: /
+Crawl-Delay: 100
+
+
+# Empresa privada de seo
+
+User-agent: deepcrawl
+Allow: /*.html$
+Disallow: /*.
+
+
+# https://www.bytedance.com/ china (ignora robots.txt)
+
+User-agent: ByteSpider
+Disallow: /
+Crawl-Delay: 100
+
+
+# neeva x snowflake ( seo privado)
+
+User-agent: Neevabot
+Allow: /*.html$
+Disallow: /*.
+
+# Facebook
+
+User-agent: facebot
+Allow: /*.html$
+Disallow: /*.
+
+User-agent: Facebot
+Allow: /*.html$
+Disallow: /*.
+
+
+# seo cube https://www.seocube.it/  (seo priv. Italia)
+
+User-agent: Zoombot
+Allow: /*.html$
+Disallow: /*.
+
+# rastreador .org (nutch)
+
+User-agent: CCBot
+Allow: /*.html$
+Disallow: /*.
+
+# Piwik Analytics
+
+User-agent: Swiftbot
+Allow: /*.html$
+Disallow: /*.
+
+# Dirección sitemap.
+
+Sitemap: https://www.example.com/sitemap.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
