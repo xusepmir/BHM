@@ -102,6 +102,15 @@
    
   }
 
+
+  .formulari {
+   
+    background-color: rgba(128, 128, 128,0.15); 
+    color: white;
+    padding: 8px;
+    
+  }
+
    .navbar-nav {
 
     font-family: 'blackcherry', serif;

@@ -1,0 +1,51 @@
+# Bloqueo de bots específicos
+# Para servidores apache2
+# By Josep Espinós
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} Baiduspider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Baiduspider-image [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Baiduspider-video [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Baiduspider-news [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Baiduspider-mobile [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} Yandex [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} Yeti [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} MJ12bot [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} YoudaoBot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Sogou [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} 360Spider [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ByteSpider [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} Neevabot [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} Facebot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} facebot [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} Zoombot [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} CCBot [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} Swiftbot [NC]
+RewriteRule .* - [F,L]
+
+
+# Bloqueo de archivos específicos
+<FilesMatch "\.(js|php)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
