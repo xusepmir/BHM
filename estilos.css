@@ -102,15 +102,6 @@
    
   }
 
-
-  .formulari {
-   
-    background-color: rgba(128, 128, 128,0.15); 
-    color: white;
-    padding: 8px;
-    
-  }
-
    .navbar-nav {
 
     font-family: 'blackcherry', serif;
@@ -187,7 +178,7 @@
   .navbar-bg6 {
     background-size:100% 500px;
     background-position: absolute;
-    background-image: url('./IMAGES/Cards.png');
+    background-image: url('./IMAGES/Merch.png');
     border-radius: 10px;
     z-index: 0;
     top: 0;
